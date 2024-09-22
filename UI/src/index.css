@@ -1,0 +1,56 @@
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background-color: #525659;
+  font-family: Segoe UI, Tahoma, sans-serif;
+}
+
+.pdf-viewer input,
+.pdf-viewer button {
+  font: inherit;
+}
+
+.pdf-viewer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf-viewer__container__document {
+  width: 100%;
+  max-width: calc(100% - 2em);
+}
+
+.pdf-viewer__container__document .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf-viewer__container__document .react-pdf__Page {
+  margin: 0 0 1em;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.pdf-viewer__container__document .react-pdf__message {
+  padding: 20px;
+  color: white;
+}
